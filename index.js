@@ -97,6 +97,9 @@ app.use(bodyParser.json());
 
 const personRoutes= require('./routes/PersonRoutes.js');
 const menuRoutes = require('./routes/menuRoutes.js');
+const userRoutes = require('./routes/userRouters.js');
+
+app.use('/user',userRoutes);
 
 app.use('/person',personRoutes);
 app.use('/menu',menuRoutes);
